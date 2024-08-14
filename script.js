@@ -1,14 +1,11 @@
 const element = document.getElementById('typewriter');
 
 const texts = [
-    "hello, world",
     "hello, my name is Joe...",
     "hi, welcome to my page!",
-    "hi, how are you today?",
-    "hi, how are you doing?",
-    "hi, feel free to explore",
-    "feel free to connect!",
-    "Thanks for stopping by!"
+    "It's pleasure to meet you...",
+    "I would love to connect with you",
+    "have a great day"
 ];
 
 let currentTextIndex = 0;
