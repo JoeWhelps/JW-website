@@ -3,7 +3,7 @@ const element = document.getElementById('typewriter');
 const texts = [
     "hello, my name is Joe...",
     "hi, welcome to my page!",
-    "It's pleasure to meet you...",
+    "It's a pleasure to meet you...",
     "I would love to connect with you",
     "have a great day"
 ];
