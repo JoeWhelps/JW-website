@@ -3347,3 +3347,71 @@ input, select, textarea {
 			}
 
 	}
+	/* ============================
+   Dark Mode + Notre Dame Colors
+   ============================ */
+
+body {
+  background: #0c2340; /* Navy */
+  color: #f8f8f8;      /* Light text */
+}
+
+a {
+  color: #ae9142; /* Gold */
+  border-bottom-color: #ae9142;
+}
+
+a:hover {
+  color: #ffffff !important;
+  border-bottom-color: transparent;
+}
+
+strong, b, h1, h2, h3, h4, h5, h6 {
+  color: #ae9142; /* Gold headings */
+}
+
+#header {
+  background: #0c2340;   /* Navy header */
+  color: #f8f8f8;
+}
+
+#header > nav ul li {
+  border-top: solid 2px #006747; /* Green divider */
+}
+
+#header > nav ul li a.active {
+  background: #ae9142;   /* Gold active nav */
+  color: #0c2340 !important;
+}
+
+#wrapper {
+  background: #142d4c; /* Slightly lighter navy */
+}
+
+#footer {
+  background: #0c2340; 
+  color: #ae9142;
+}
+
+/* Accordion */
+.accordion {
+  background-color: #142d4c; /* Dark navy */
+  color: #f8f8f8;
+}
+
+.accordion:hover,
+.accordion.active {
+  background-color: #006747; /* Green highlight */
+  color: #ffffff;
+}
+
+.panel {
+  background-color: #1e3a60; /* Slightly lighter navy */
+  color: #f8f8f8;
+}
+
+.panel p {
+  background-color: #0c2340;
+  border: 1px solid #ae9142; /* Gold border */
+  color: #f8f8f8;
+}

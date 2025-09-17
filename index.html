@@ -13,91 +13,50 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<style>
-        /* Accordion CSS */
-        .accordion {
-            background-color: #777;
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
-            transition: background-color 0.4s ease;
-            margin-bottom: 10px;
-        }
-
-        .accordion:hover, .accordion.active {
-            background-color: #555;
-        }
-
-        .panel {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease;
-            margin-bottom: 10px;
-        }
-
-        .panel p {
-            padding: 18px;
-            background-color: #f1f1f1;
-            border: 1px solid #ddd;
-        }
-		.icons li {
-			position: relative;
-			display: inline-block;
-			margin-right: 15px;
-		}
-
-		.icons li .label {
-			display: none;
-			position: absolute;
-			bottom: 100%; /* Position above the icon */
-			left: 50%;
-			transform: translateX(-50%);
-			background-color: #333;
-			color: white;
-			padding: 5px;
-			border-radius: 3px;
-			white-space: nowrap;
-			font-size: 12px;
-			z-index: 10;
-		}
-
-		.icons li:hover .label {
-			display: block;
-		}
-    </style>
 	<body class="is-preload">
 
 		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/profile_25.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Joe Whelpley</a></h1>
-					<p>3rd year Computer Science Student<br><i>-University of Notre Dame, '26</i></p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About me</a></li>
-						<li><a href="#two">Skills & Experience</a></li>
-						<li><a href="#three">My Projects</a></li>
-						<li><a href="#four">Connect with me</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/joewhelpleynd/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="https://github.com/JoeWhelps" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://leetcode.com/u/jwhelple/" class="icon solid fa-code"><span class="label">Leetcode</span></a></li>
-						<li><a href="#four" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-			</section>
+        <section id="header">
+        <header>
+            <span class="image avatar"><img src="images/profile_25.jpg" alt="Profile Picture of Joe Whelpley" /></span>
+            <h1 id="logo"><a href="#">Joe Whelpley</a></h1>
+            <p>4th year CS Student<br><i>University of Notre Dame, ’26</i></p>
+            <p><a href="Joseph Whelpley Resume 2025.pdf" class="button small" download>Download Resume</a></p>
+        </header>
+        <nav id="nav">
+            <ul>
+            <li><a href="#one" class="active">About Me</a></li>
+            <li><a href="#two">Skills & Experience</a></li>
+            <li><a href="#three">Projects</a></li>
+            <li><a href="#four">Connect</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <ul class="icons">
+            <li>
+                <a href="https://www.linkedin.com/in/joewhelpleynd/" class="icon brands fa-linkedin">
+                <span class="label">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/JoeWhelps" class="icon brands fa-github">
+                <span class="label">GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://leetcode.com/u/jwhelple/" class="icon solid fa-code">
+                <span class="label">LeetCode</span>
+                </a>
+            </li>
+            <li>
+                <a href="#four" class="icon solid fa-envelope">
+                <span class="label">Email</span>
+                </a>
+            </li>
+            </ul>
+        </footer>
+        </section>
+
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -114,11 +73,12 @@
 									<header class="major">
 										<h2 id="typewriter"></h2>
     									<script src="script.js"></script>
-										<p>Hi! My name is Joe Whelpley. I am a 3rd year Computer Science Student at the University of Notre Dame with a minor in Business. This website highlights my coding skills and work experience as I pursue my career in technology.</p>
+										<p>Hi! My name is Joe Whelpley.</p>
+                                        <p>I am a 4th year Computer Science Student at the University of Notre Dame with a minor in Business.</p>
 										<div class="features">
 											<article>
-												<p>While at Notre Dame I have developed a strong love of coding and all its vast applications from Linux to robotics. Even so, I find myself particularly drawn to AI/ML, full-stack and backend development, cybersecurity, and data analytics.</p>
-												<p>Beyond coding, my activities include: singing as a Tenor 1 in the Notre Dame Glee Club, teaching and discussing Philosophy, and engaging in community service. These activities not only enrich my life but also provide me with diverse perspectives that I bring into my work.</p>
+												<p>I have a passion for Full-stack development, and AI/ML research.</p>
+												<p>Beyond coding, I teach and discuss Philosophy, sing in a choir, love ultimate frisbee, and lead the martial arts club at ND.</p>
 											</article>
 										</div>
 									</header>
@@ -126,46 +86,56 @@
 							</section>
 
 						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Skills and Experience</h3>
-									<p></p>
-									<button class="accordion">Relevant Work Experience:</button>
-									<div class="panel">
-										<p><b>Eye-tracking AI Researcher</b><br><i>University of Notre Dame</i><br>• Developed an eye-tracking AI model using Pupil Core glasses by collecting data from participants, cleaning the data, and feeding it into a model.<br>• Developed Python scripts to clean eye-tracking data that supported the research of other AI researchers at Notre Dame</p>
-										<p><b>Technology Instructor</b><br><i>Lavner Education</i><br>• Taught week-long foundational courses in Python, robotics, 3D printing, and Scratch to children with ages ranging from 6-14 years old for 3 months.<br>• Was one of the 3% of applicants chosen to teach these topics and adapt curriculum.</p>
-										<p><b>Notre Dame Philosophy Instructor</b><br><i>University of Notre Dame</i><br>• Led and planned a weekly, 1 hour Socratic discussion for students taking a foundational Notre Dame philosophy class.<br>• Was one of 11 students selected from a pool of 200 applicants.</p>
-										<p><b>Notre Dame Sports Event Manager</b><br><i>University of Notre Dame</i><br>• Ran and managed fan entertainment events and booths with a small team for Notre Dame Sports.</p>
-									</div>
-							
-									<button class="accordion">Technology and Skills:</button>
-									<div class="panel">
-										<p><b>Languages:</b> Proficient in: Python, JavaScript, C, HTML, CSS, Linux, Excel, Windows, Vim, Shell, MATLAB, SolidWorks.<br>Learning: Java, C++, REST-API, Spring boot, cybersecurity,and ROS.</p>
-										<p><b>Certifications:</b>Kali Linux. Pursuing certification as a AWS Certified Cloud Practicioner</p>
-									</div>
-							
-									<button class="accordion">Clubs and Activities:</button>
-									<div class="panel">
-										<p><b>Rover Software Development Team</b><br><i>Domer Rover</i><br>• Coordinated the movement of a robotic arm in ROS to complete a large variety of tasks for the University Rover Challenge. </p>
-										<p><b>Engineering Innovatothon</b><br>• Developed and presented a prototype solution to a real-world business problem proposed by Marmon, Inc.</p>
-										<p><b>Service Commissioner</b><br><i>Notre Dame Glee Club</i><br>• Coordinated and managed mini concerts for a retirement home, multiple elementary school programs, and Notre Dame campus.</p>
-									</div>
+                        <section id="two">
+                        <div class="container">
+                            <h3>Skills and Experience</h3>
 
-									<button class="accordion">Education:</button>
-									<div class="panel">
-										<p><b>University of Notre Dame</b><br><i>August 2022-May 2026 | Bachelors of Science</i><br>Major: Computer Science Engineering.<br>Minor: Engineering Corporate Practice</p>
-									</div>
-									<h3>Highlights:</h3>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code"><b>Proficient in Python, JS, C, Linux and HTML+CSS</b></li>
-										<li class="icon solid fa-cubes"><b>Developed eye-tracking AI models from the ground up.</b></li>
-										<li class="icon solid fa-users"><b>Taught summer camps in Python, robotics, 3D printing and Scratch</b></li>
-										<li class="icon solid fa-bolt"><b>Developed the software for a Mars Rover</b></li>
-										<li class="icon solid fa-book"><b>Notre Dame Philosophy Instructor</b></li>
-										<li class="icon solid fa-users"><b>Community Service Commissioner</b></li>
-									</ul>
-								</div>
-							</section>
+                            <!-- Work Experience -->
+                            <button class="accordion">Relevant Work Experience</button>
+                            <div class="panel">
+                            <p><b>Software Engineer Intern</b><br>
+                            <i>MyTickets | May 2025 – Present</i><br>
+                            • Built and shipped 20+ production features including Stripe checkout, fraud detection, and advanced search filters, reducing checkout abandonment by 25%.<br>
+                            • Refactored filtering with parallelized API requests and caching, cutting API calls by 60% and load times by 40%.<br>
+                            • Resolved 15+ critical payment/webhook bugs, improving reliability by 85%. Worked in an Agile full-stack environment (React, Node.js, REST APIs, PostgreSQL).</p>
+
+                            <p><b>Eye-Tracking AI Researcher</b><br>
+                            <i>University of Notre Dame | Jan 2025 – Present</i><br>
+                            • Developed a Python-based ML pipeline for webcam eye-tracking data.<br>
+                            • Authored reusable data-cleaning utilities adopted by other researchers.</p>
+                            </div>
+
+                            <!-- Skills -->
+                            <button class="accordion">Technical Skills</button>
+                            <div class="panel">
+                            <p><b>Languages:</b> Python, JavaScript, C, HTML, CSS, Java, React</p>
+                            <p><b>Frameworks & Tools:</b> Django, Node.js, REST APIs, Linux, Git</p>
+                            <p><b>Other:</b> AI/ML (PyTorch, scikit-learn), Excel, Shell, SolidWorks</p>
+                            </div>
+
+                            <!-- Education -->
+                            <button class="accordion">Education</button>
+                            <div class="panel">
+                            <p><b>University of Notre Dame</b><br>
+                            <i>B.S. Computer Science, Minor in Business (ECP) | May 2026</i></p>
+                            <p><b>Dublin City University</b><br>
+                            <i>Fall Study Abroad | Sept – Dec 2024</i></p>
+                            </div>
+
+                            <!-- Leadership -->
+                            <button class="accordion">Leadership</button>
+                            <div class="panel">
+                            <p><b>Martial Arts President</b><br>
+                            <i>NDMAI Club | April 2025 – Present</i><br>
+                            • Managed operations, budgets, and events; lead 4 weekly training sessions for 15+ members promoting discipline, focus, and teamwork.</p>
+
+                            <p><b>Choir Service Commissioner</b><br>
+                            <i>Notre Dame Glee Club | May 2023 – May 2024</i><br>
+                            • Organized, planned, and led multiple service outreach concerts for retirement homes and youth development programs.<br>
+                            </div>
+                        </div>
+                        </section>
+
 
 						<!-- Three -->
 							<section id="three">
