@@ -3215,7 +3215,7 @@ input, select, textarea {
 				-webkit-transform: translateX(17em);
 				-ms-transform: translateX(17em);
 				transform: translateX(17em);
-				right: 0;
+				left: 0;
 			}
 
 				#header > header {
@@ -3351,6 +3351,86 @@ input, select, textarea {
    Dark Mode + Notre Dame Colors
    ============================ */
 
+/* =======================
+   Sidebar on the Left
+   ======================= */
+#header {
+  left: 0;             /* Move sidebar to the left */
+  right: auto;         /* Reset right positioning */
+  background: #0c2340; /* Navy */
+  color: #f8f8f8;
+  width: 23em;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  text-align: center;
+}
+
+/* Shift main content to the right of the sidebar */
+#wrapper {
+  padding-left: 23em;  /* Match sidebar width */
+  padding-right: 0;
+  background: #142d4c;
+}
+
+/* =======================
+   Responsive Sidebar
+   ======================= */
+@media screen and (max-width: 1024px) {
+  #header {
+    width: 18em;       /* Narrower sidebar */
+    padding: 1.5em;
+  }
+
+  #header h1 {
+    font-size: 1.4em;
+  }
+
+  #header p,
+  #header nav ul li a {
+    font-size: 0.9em;
+    padding: 0.7em 0;
+  }
+
+  #wrapper {
+    padding-left: 18em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #header {
+    width: 100%;       /* Sidebar becomes full width at small screens */
+    height: auto;
+    position: relative;
+  }
+
+  #wrapper {
+    padding-left: 0;   /* Reset main content padding */
+  }
+}
+
+/* =======================
+   Center Highlights Section
+   ======================= */
+#highlights-section {
+  text-align: center;
+  margin: 2em auto;
+}
+
+#highlights-section h3 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #ae9142; /* Gold */
+}
+
+#highlights-section ul.feature-icons {
+  display: inline-block;  /* Center horizontally */
+  text-align: left;       /* Keep list items aligned left */
+  max-width: 700px;       /* Prevent stretching too wide */
+}
+
+
 body {
   background: #0c2340; /* Navy */
   color: #f8f8f8;      /* Light text */
@@ -3415,3 +3495,150 @@ strong, b, h1, h2, h3, h4, h5, h6 {
   border: 1px solid #ae9142; /* Gold border */
   color: #f8f8f8;
 }
+
+/* =======================
+   Sidebar on the Left (default expanded)
+   ======================= */
+#header {
+  left: 0;
+  right: auto;            /* Reset right positioning */
+  transform: translateX(0); /* Keep visible by default */
+  background: #0c2340;    /* Navy */
+  color: #f8f8f8;
+  width: 23em;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  text-align: center;
+  transition: transform 0.5s ease;
+  padding: 1.5em 1em;     /* Reduced buffer */
+}
+
+/* Main content shifted right */
+#wrapper {
+  padding-left: 23em;
+  padding-right: 0;
+  background: #142d4c;
+  transition: transform 0.5s ease;
+}
+
+/* =======================
+   Toggle Button on the Left
+   ======================= */
+#titleBar .toggle {
+  left: 0;     /* Move toggle button to left */
+  right: auto; /* Reset right */
+}
+
+#titleBar .toggle:before {
+  background: #ae9142; /* Gold */
+  color: #0c2340;      /* Navy icon */
+  content: '\f0c9';    /* Hamburger icon */
+  font-size: 18px;
+  line-height: 44px;
+}
+
+/* =======================
+   Collapsed State
+   ======================= */
+body.header-visible #header {
+  transform: translateX(-23em); /* Collapse sidebar to left */
+}
+
+body.header-visible #wrapper,
+body.header-visible #titleBar {
+  transform: translateX(0);     /* Content back to full width */
+}
+
+/* =======================
+   Responsive Adjustments
+   ======================= */
+@media screen and (max-width: 1024px) {
+  #header {
+    width: 18em;
+    padding: 1em; /* smaller padding */
+  }
+  #wrapper {
+    padding-left: 18em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: translateX(0); /* always visible on tiny screens */
+  }
+  #wrapper {
+    padding-left: 0;
+  }
+}
+/* Title bar container */
+#titleBar {
+  display: flex;
+  justify-content: space-between; /* Pushes items apart */
+  align-items: center;
+  background: #0c2340;
+  color: #f8f8f8;
+  padding: 0 1em;
+  height: 3.2em;
+}
+
+/* Toggle button stays on left */
+#titleBar .toggle {
+  order: 0;
+}
+
+/* Logo text moves right */
+#titleBar #logo {
+  order: 1;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: auto;
+  color: #f8f8f8;
+}
+/* Apply to body and sidebar */
+body, #header {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #ae9142 #0c2340; /* thumb | track */
+}
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar,
+#header::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track,
+#header::-webkit-scrollbar-track {
+  background: #0c2340; /* navy track */
+}
+
+body::-webkit-scrollbar-thumb,
+#header::-webkit-scrollbar-thumb {
+  background-color: #ae9142; /* gold thumb */
+  border-radius: 4px;
+}
+/* Accordion base */
+.accordion {
+  background-color: rgba(200, 200, 200, 0.15); /* transparent grey */
+  color: #f8f8f8;
+  border: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover & Active = Green */
+.accordion:hover,
+.accordion.active {
+  background-color: #0b6623; /* ND green */
+  color: #ffffff;
+}
+
