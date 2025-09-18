@@ -11,6 +11,7 @@ Sources:
 
 - Thanks for reading and have a great day!
 
-![image](https://github.com/user-attachments/assets/5f7f9984-5d1d-41d2-93d6-1f9fe0dea30d)
+<img width="1695" height="885" alt="image" src="https://github.com/user-attachments/assets/a4cb33f9-e82a-406c-9976-938823cd186e" />
+
 
 
