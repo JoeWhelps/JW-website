@@ -3642,3 +3642,124 @@ body::-webkit-scrollbar-thumb,
   color: #ffffff;
 }
 
+/* =======================
+   Compact Sidebar for Laptops
+   ======================= */
+/* Make sidebar more compact so footer icons are visible without scrolling */
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#header > header {
+  flex-shrink: 0;
+  padding: 1.5em 1.5em 1em 1.5em !important; /* Reduced top/bottom padding */
+}
+
+#header > header .avatar {
+  width: 6.5em !important; /* Smaller avatar */
+  margin: 0 auto 1.25em auto !important; /* Reduced bottom margin */
+}
+
+#header > header h1 {
+  font-size: 1.5em !important; /* Slightly smaller heading */
+  margin: 0 0 0.5em 0 !important;
+}
+
+#header > header p {
+  margin: 0.5em 0 0 0 !important; /* Reduced margins */
+  font-size: 0.9em; /* Slightly smaller text */
+  line-height: 1.4;
+}
+
+#header > header .button {
+  margin-top: 0.75em !important;
+  padding: 0.6em 1.2em !important; /* Smaller button */
+  font-size: 0.85em !important;
+}
+
+#header > nav {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-height: 0; /* Allow nav to shrink */
+  overflow-y: auto; /* Allow nav to scroll if needed */
+}
+
+#header > nav ul li a {
+  padding: 0.7em 0 !important; /* Reduced nav item padding */
+  font-size: 0.95em;
+}
+
+#header > footer {
+  flex-shrink: 0;
+  padding: 1em 2em !important; /* Reduced footer padding */
+  margin-top: auto; /* Push footer to bottom */
+}
+
+#header > footer .icons {
+  margin: 0;
+}
+
+#header > footer .icons li {
+  margin: 0.3em 0;
+}
+
+/* For smaller laptop screens (768px - 1024px height) */
+@media screen and (max-height: 900px) {
+  #header > header {
+    padding: 1.2em 1.5em 0.8em 1.5em !important;
+  }
+  
+  #header > header .avatar {
+    width: 6em !important;
+    margin: 0 auto 1em auto !important;
+  }
+  
+  #header > header h1 {
+    font-size: 1.4em !important;
+  }
+  
+  #header > header p {
+    font-size: 0.85em !important;
+    margin: 0.4em 0 0 0 !important;
+  }
+  
+  #header > nav ul li a {
+    padding: 0.6em 0 !important;
+  }
+  
+  #header > footer {
+    padding: 0.8em 2em !important;
+  }
+}
+
+/* For very small laptop screens */
+@media screen and (max-height: 768px) {
+  #header > header {
+    padding: 1em 1.5em 0.6em 1.5em !important;
+  }
+  
+  #header > header .avatar {
+    width: 5.5em !important;
+    margin: 0 auto 0.8em auto !important;
+  }
+  
+  #header > header h1 {
+    font-size: 1.3em !important;
+  }
+  
+  #header > header p {
+    font-size: 0.8em !important;
+    margin: 0.3em 0 0 0 !important;
+  }
+  
+  #header > nav ul li a {
+    padding: 0.5em 0 !important;
+    font-size: 0.9em;
+  }
+  
+  #header > footer {
+    padding: 0.6em 2em !important;
+  }
+}
